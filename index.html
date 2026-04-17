@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Store Mnagament System</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="./css/all.min.css" />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section class="contact py-5">
+      <div class="title text-center shadow border mb-5">
+        <h2 class="text-uppercase">
+          <span class="text-info">e</span>lonsol
+          <span class="text-info">s</span>tore
+        </h2>
+      </div>
+
+      <div class="contact-form w-75 mx-auto">
+        <div class="form-floating mb-3">
+          <input
+            type="text"
+            class="form-control border-0 border-bottom rounded-0"
+            id="productName"
+            placeholder="name@example.com"
+          />
+          <label for="productName">Prodcut Name</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="number"
+            class="form-control border-0 border-bottom rounded-0"
+            id="productPrice"
+            placeholder="name@example.com"
+          />
+          <label for="productPrice">Prodcut Price</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <select
+            class="form-select border-0 border-bottom rounded-0"
+            id="floatingSelect"
+            aria-label="Floating label select example"
+          >
+            <option selected disabled hidden>Choose Product Category</option>
+            <option value="1">TV</option>
+            <option value="2">Laptop</option>
+            <option value="3">Headphone</option>
+            <option value="4">Printer</option>
+            <option value="5">Screens</option>
+          </select>
+          <label for="floatingSelect">Product Category</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <textarea
+            class="form-control border-0 border-bottom rounded-0"
+            placeholder="Leave a comment here"
+            id="floatingTextarea"
+          ></textarea>
+          <label for="floatingTextarea">Product Description</label>
+        </div>
+
+        <div class="form-floating mb-3">
+          <input
+            type="file"
+            class="form-control border-0 border-bottom rounded-0"
+            id="productImage"
+            placeholder="name@example.com"
+          />
+          <label for="productImage">Prodcut Image</label>
+        </div>
+
+        <button onclick="addItem() " class="btn btn-info text-light">Add Product</button>
+      </div>
+    </section>
+
+    <div cla="product ">
+      <div class="container">
+        <div  class="row" id="rowData">
+
+        </div>
+      </div>
+    </div>
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

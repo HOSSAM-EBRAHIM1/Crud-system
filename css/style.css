@@ -1,0 +1,17 @@
+.contact .title {
+  width: fit-content;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+.contact .contact-form .form-control,
+.contact .contact-form .form-select {
+  border-width: 2px !important;
+}
+
+.contact .contact-form .form-control:focus,
+.contact .contact-form .form-select:focus {
+  box-shadow: none;
+  border-color: darkcyan !important;
+}
